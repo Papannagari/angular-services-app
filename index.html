@@ -9,14 +9,19 @@
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div ng-controller="myController">
 
-	<div class="container">
+<div class="container">
+	<div class="table-responsive">
 	<h1>Customer Details</h1>
-		<table class="table" ng-cloak>
-		<thead>Customer Details</thead>
+		<table class="table ng-cloak" >
+		
 			<tr>
               <td>Id:</td>
               <td>{{ custdata.id }}</td>
@@ -50,11 +55,13 @@
               <td>{{ custdata.state }}</td>
             </tr>
 		</table>
+		</div>
 	</div>
 	<div class="container">
 		<h1>Samsung Galaxy Note 7 Product Details</h1>
-     <table class="table" ng-cloak>
-		<thead>Samsung Details</thead>
+		<div class="table-responsive">
+    <table class="table ng-cloak" >
+		
 			<tr>
               <td>technology:</td>
               <td>{{ samsungproductData.technology }}</td>
@@ -92,13 +99,19 @@
               <td>{{ samsungproductData.ram }}</td>
             </tr>
         </table>
+        </div>
 	</div>
 	
 
 	<div class="container">
 		<h1>About TechEra Organisation</h1>
-     <table class="table" ng-cloak>
-		<thead>About TechEra Consultancy</thead>
+		<div class="table-responsive">
+    <table class="table ng-cloak" >
+		
+		 <tr>
+              <td>CEO:</td>
+              <td>{{ techEraInfo.CEO }}</td>
+            </tr>
 			<tr>
               <td>NameofOrganization:</td>
               <td>{{ techEraInfo.NameofOrganization }}</td>
@@ -119,21 +132,20 @@
               <td>contact:</td>
               <td>{{ techEraInfo.contact }}</td>
             </tr>
-            <tr>
-              <td>CEO:</td>
-              <td>{{ techEraInfo.CEO }}</td>
-            </tr>
+           
            <tr>
               <td>vision:</td>
               <td>{{ techEraInfo.vision }}</td>
             </tr>
             </table>
+            </div>
 	</div>
 
 <div class="container" >
 	<h1>Constant Data Of Ideabtes</h1>
-     <table class="table" ng-cloak>
-		<thead>Constant Data</thead>
+	<div class="table-responsive">
+    <table class="table ng-cloak" >
+		
 			<tr>
               <td>name:</td>
               <td>{{ constantData.name }}</td>
@@ -143,18 +155,20 @@
               <td>{{ constantData.address }}</td>
             </tr>
             </table>
+            </div>
 </div>
 <div class="container">
 <h1>Value Service</h1>
-     <table class="table" ng-cloak>
-		<thead>Value Service</thead>
+<div class="table-responsive">
+    <table class="table ng-cloak" >
+		
 			<tr>
               <td>Organisation Code:</td>
               <td>{{ organisationCode }}</td>
             </tr>
             
        </table>	
-
+ </div>
 </div>
 
 </div>
