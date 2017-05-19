@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Angular Services</title>
+	<style type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	</style>
+</head>
+<body>
+<div ng-controller="myController">
+
+	<div class="container">
+	<h1>Customer Details</h1>
+		<table class="table" ng-cloak>
+		<thead>Customer Details</thead>
+			<tr>
+              <td>Id:</td>
+              <td>{{ custdata.id }}</td>
+            </tr>
+            <tr>
+              <td>firstName:</td>
+              <td>{{ custdata.firstName }}</td>
+            </tr>
+            <tr>
+              <td>lastName:</td>
+              <td>{{ custdata.lastName }}</td>
+            </tr>
+            <tr>
+              <td>email:</td>
+              <td>{{ custdata.email }}</td>
+            </tr>
+            <tr>
+              <td>dob:</td>
+              <td>{{ custdata.dob }}</td>
+            </tr>
+            <tr>
+              <td>gender:</td>
+              <td>{{ custdata.gender }}</td>
+            </tr>
+             <tr>
+              <td>mothertounge:</td>
+              <td>{{ custdata.mothertounge }}</td>
+            </tr>
+            <tr>
+              <td>state:</td>
+              <td>{{ custdata.state }}</td>
+            </tr>
+		</table>
+	</div>
+	<div class="container">
+		<h1>Samsung Galaxy Note 7 Product Details</h1>
+     <table class="table" ng-cloak>
+		<thead>Samsung Details</thead>
+			<tr>
+              <td>technology:</td>
+              <td>{{ samsungproductData.technology }}</td>
+            </tr>
+            <tr>
+              <td>weight:</td>
+              <td>{{ samsungproductData.weight }}</td>
+            </tr>
+            <tr>
+              <td>os:</td>
+              <td>{{ samsungproductData.os }}</td>
+            </tr>
+            <tr>
+              <td>color:</td>
+              <td>{{ samsungproductData.color }}</td>
+            </tr>
+            <tr>
+              <td>camera:</td>
+              <td>{{ samsungproductData.camera }}</td>
+            </tr>
+            <tr>
+              <td>display:</td>
+              <td>{{ samsungproductData.display }}</td>
+            </tr>
+            <tr>
+              <td>internal:</td>
+              <td>{{ samsungproductData.internal }}</td>
+            </tr>
+            <tr>
+              <td>primary:</td>
+              <td>{{ samsungproductData.primary }}</td>
+            </tr>
+            <tr>
+              <td>Ram:</td>
+              <td>{{ samsungproductData.ram }}</td>
+            </tr>
+        </table>
+	</div>
+	
+
+	<div class="container">
+		<h1>About TechEra Organisation</h1>
+     <table class="table" ng-cloak>
+		<thead>About TechEra Consultancy</thead>
+			<tr>
+              <td>NameofOrganization:</td>
+              <td>{{ techEraInfo.NameofOrganization }}</td>
+            </tr>
+            <tr>
+              <td>established:</td>
+              <td>{{ techEraInfo.established }}</td>
+            </tr>
+            <tr>
+              <td>Noofemployees:</td>
+              <td>{{ techEraInfo.Noofemployees }}</td>
+            </tr>
+            <tr>
+              <td>location:</td>
+              <td>{{ techEraInfo.location }}</td>
+            </tr>
+            <tr>
+              <td>contact:</td>
+              <td>{{ techEraInfo.contact }}</td>
+            </tr>
+            <tr>
+              <td>CEO:</td>
+              <td>{{ techEraInfo.CEO }}</td>
+            </tr>
+           <tr>
+              <td>vision:</td>
+              <td>{{ techEraInfo.vision }}</td>
+            </tr>
+            </table>
+	</div>
+
+<div class="container" >
+	<h1>Constant Data Of Ideabtes</h1>
+     <table class="table" ng-cloak>
+		<thead>Constant Data</thead>
+			<tr>
+              <td>name:</td>
+              <td>{{ constantData.name }}</td>
+            </tr>
+            <tr>
+              <td>address:</td>
+              <td>{{ constantData.address }}</td>
+            </tr>
+            </table>
+</div>
+<div class="container">
+<h1>Value Service</h1>
+     <table class="table" ng-cloak>
+		<thead>Value Service</thead>
+			<tr>
+              <td>Organisation Code:</td>
+              <td>{{ organisationCode }}</td>
+            </tr>
+            
+       </table>	
+
+</div>
+
+</div>
+<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.js"></script>
+<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+<script type="text/javascript" src="services/app.js"></script>
+<script type="text/javascript" src="services/provider.js"></script>
+<script type="text/javascript" src="services/service.js"></script>
+<script type="text/javascript" src="services/factory.js"></script>
+<script type="text/javascript" src="services/constant.js"></script>
+<script type="text/javascript" src="services/value.js"></script>
+</body>
+</html>
